@@ -15,13 +15,20 @@ body{
 .headercontainer{
     background-color: #fbdc00;
 }
+.titlephrase{
+    font-size: 40px;
+}
 .navbaritem{
     display: flex;
     font-weight: bold;
+    font-size: 13px;
+}
+.navbaritem:hover{
+    color: #ee3425;
 }
 .whatsappinput{
     width: 500px;
-    width: 50%;
+    width: 43.5%;
     padding-left: 10px;
     height: 30px;
     outline: transparent;
@@ -43,10 +50,15 @@ body{
     padding-top: 5px;
     padding-bottom: 5px;
     transition: left 0.5s;
+    align-items: center;
 }
 .offer{
     width: 70%;
     text-align: right;
+    padding-right: 50px;
+}
+.offer span{
+    font-size: 13px;
 }
 .cancel{
     width: 30%;
@@ -91,6 +103,27 @@ body{
 .dropdown{
     display: none;
 }
+.trustanimationcontainer{
+    margin-top: 50px;
+}
+.bannercontact{
+    width: 60%;
+    background-color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    width: 320px;
+}
+.bannercontactbutton{
+    background-color: #36bb22;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: white;
+    height: 30px;
+    font-size: 11px;
+    margin-right: -50px;
+}
 .bannercontainer{
     position: relative;
     width: 100%;
@@ -100,6 +133,9 @@ body{
     background-size: cover;
     height: auto;
     height: 500px;
+}
+#sticky-contact b{
+    font-size: 10px; color: white;
 }
 .banner{
     display: flex;
@@ -131,7 +167,23 @@ body{
 .mobile_video{
     display: none;
 }
+.navbaritem img{
+    width: 15px;
+}
+@media (max-width: 1000px){
+    .navbaritem{
+        font-size: 10px;
+    }
+}
+.taglineproductcontainer{
+    background-color: rgb(248, 252, 239);
+    width: 100%;
+    margin-top: 100px;
+}
 @media (max-width: 767px){
+    .titlephrase{
+        font-size: 30px;
+    }
     .navbar-2 .navbaritems{
         display: none;
     }
@@ -140,6 +192,9 @@ body{
     }
     .desktop_video{
         display: none;
+    }
+    .navbaritem{
+        font-size: 10px;
     }
     .mobile_video{
         display: flex;
@@ -200,9 +255,11 @@ margin-bottom: -40px;
     align-items: center;
     justify-content: center;
 }
-.figure h1{
+.figure div{
     color: #ee3425;
+    font-size: 22px;
 }
+
 @media (max-width: 767px){
 .figures {
 padding: 0;
@@ -215,6 +272,9 @@ width: 50%;
 text-align: center;
 margin-top: 30px;
 }
+.figure div {
+    font-size: 15px;
+}
 }
 
 
@@ -226,6 +286,7 @@ margin-top: 30px;
     align-items: center;
     height: 400px;
     background-color: rgb(248, 252, 239);
+    margin-left: 20px;
 }
 .tagline{
     width: 50%;
@@ -241,18 +302,33 @@ margin-top: 30px;
     object-fit: cover;
     justify-content: flex-start;
 }
+ #tagline1{
+    font-size: 35px;
+    font-weight: bolder;
+}
 @media (max-width: 767px) {
     .taglinecontainer{
         flex-direction: column-reverse;
-        align-items: center;
-        height: auto;
-    }
+        align-items: flex-start;
+        height: 500px;
 
+    }
+    .tagline{
+        width: 100%;
+    }
+    .taglineimage{
+        width: 100%;
+    }
+    #tagline1{
+        font-size: 25px;
+        font-weight: bolder;
+    }
 }
 
 .productservicecontainer{
     width: 100%;
     background-color: rgb(248, 252, 239);
+    margin-top: 50px;
 }
 .productservice{
     margin: auto;
@@ -271,13 +347,34 @@ margin-top: 30px;
     font-weight: bold;
 }
 .product{
+
     height: 150px;
     width: 160px;
     text-align: center;
     margin-left: 10px;
     background-color: white;
     border-radius: 20px;
+    transition: box-shadow 0.3s;
     box-shadow: 2px 2px #e5dfdf;
+    padding-bottom: 5px;
+}
+.productdesc div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.productdesc div p{
+    font-size: 10px;
+    margin-right: 2px;
+}
+.productdesc div img{
+    width: 15px;
+    height: 7px;
+}
+
+.product:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 .product p{
     font-size: 15px;
@@ -290,8 +387,9 @@ margin-top: 30px;
     height: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 13px;
+    padding-bottom: 10px;
 }
 .products{
     display: flex;
@@ -313,9 +411,10 @@ margin-top: 30px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
     font-size: 13px;
+    padding-bottom: 10px;
 }
 .product img{
     width: 50px;
@@ -342,6 +441,11 @@ margin-top: 30px;
         justify-content: center;
         margin-top: 20px;
     }
+}
+
+.blogcontainer{
+    width: 100%;
+    margin-top: 75px;
 }
 
 .blog{
@@ -447,6 +551,9 @@ margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
 }
+.productlists1{
+    margin-right: 15px;
+}
 .mobilelists{
     display: none;
 }
@@ -469,7 +576,16 @@ margin-top: 30px;
 }
 @media (max-width: 767px){
     .mobilelists{
+        margin: 40px 0px 0px 0px;
         display: block;
+    }
+    .mobilelistitem div{
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 15px;
+        margin: 15px 0px 15px 0px;
+        border-bottom: 1px solid;
+        padding-left: 14px;
     }
     .desktoplists{
         display: none;
@@ -487,6 +603,7 @@ margin-top: 30px;
     padding-bottom: 20px;
     align-items: center;
     justify-content: space-evenly;
+    height: 150px;
 }
 .startedbutton button{
     background-color: #ee3425;
@@ -506,6 +623,8 @@ margin-top: 30px;
     .getstarted1{
         flex-direction: column;
         align-items: flex-start;
+        padding-left: 20px;
+        font-size: 13px;
     }
 }
 
@@ -548,6 +667,7 @@ margin-top: 30px;
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
+    margin-top: 75px;
 }
 .industries{
     width: 100%;
@@ -565,12 +685,15 @@ margin-top: 30px;
     padding-bottom: 30px;
 }
 
+
+
 .getstartedcontainer{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    margin-top: 75px;
 }
 .getstartedbutton{
     background-color: #ee3425;
@@ -584,11 +707,18 @@ margin-top: 30px;
 }
 .getstarted{
     order: 2;
+    width: 450px;
+    margin-right: 50px;
+    padding-left: 15px;
+}
+.getstarted span{
+    font-size: 13px;
 }
 .getstartedanimation{
-    order: 1;
+    order: 3;
     position: relative;
-    height: 400px;
+    height: 300px;
+    width: 250px;
 }
 .moving-image {
     position: absolute;
@@ -596,6 +726,8 @@ margin-top: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: moveUpDown 3s infinite;
+    width: 300px;
+
   }
 
   @keyframes moveUpDown {
@@ -609,11 +741,26 @@ margin-top: 30px;
       transform: translate(-50%, -50%);
     }
   }
-@media screen and (max-width: 867px) {
+@media screen and (max-width: 767px) {
+    .getstartedcontainer{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .getstarted{
+        width: 100%;
+        order: 3;
+    }
+    .getstartedanimation{
+        order: 2;
+    }
     .getstartedbutton{
         width: 100%;
     }
 }
+
+
 
 .growfastercontainer{
     width: 100%;
@@ -627,6 +774,24 @@ margin-top: 30px;
     justify-content: space-around;
 }
 
+.footercontactarea{
+    width: 100px;
+    background-color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width: 350px;
+    padding-left: 10px;
+}
+.footercontactbutton{
+    background-color: #ee3425;
+    padding: 5px 15px;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    height: 40px;
+    font-size: 13px;
+}
 .growbutton button{
     padding: 10px;
     width: 130px;
@@ -646,6 +811,12 @@ margin-top: 30px;
     .growtext{
         margin-bottom: 20px;
     }
+    .getstarted{
+        order: 4;
+    }
+    .getstartedanimation{
+        order: 3;
+    }
 }
 
 
@@ -657,6 +828,10 @@ overflow: hidden;
 .image-container {
 display: flex;
 animation: slide 30s linear infinite;
+animation-timing-function: linear;
+animation-duration: 30s;
+animation-iteration-count: infinite;
+animation-fill-mode: forwards;
 
 }
 .image-container img {
@@ -680,6 +855,9 @@ transform: translateX(-155.5%);
     flex-direction: column;
     justify-content: center;
 }
+.stage:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
 .laptopimage{
     width: 35%;
     height: 35%;
@@ -692,10 +870,12 @@ transform: translateX(-155.5%);
     justify-content: center;
 }
 .stage{
+    transition: box-shadow 0.3s;
+    box-shadow: 2px 2px #e5dfdf;
     margin: 10px;
     padding: 20px;
     width: 45%;
-    box-shadow: 2px 2px #e5dfdf;
+
 }
 .stagename{
     display: flex;

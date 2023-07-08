@@ -11,6 +11,9 @@
         body{
             font-family: Ubuntu;
         }
+        button{
+            font-family: Ubuntu;
+        }
     </style>
 </head>
 <body>
@@ -22,7 +25,7 @@
       <div id="sidebar">
         <div id="sticky-contact">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png" width="30px">
-        <b style="font-size: 10px; color: white;">Whatsapp Us</b>
+        <b>Whatsapp Us</b>
         </div>
       </div>
     <!--Navbars-->
@@ -31,38 +34,39 @@
             <nav class="navbar-1">
                 <div class="offer">
                     <img src="https://www.cogoport.com/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fcogoport_icon&w=16&q=75">
-                    <span>Limited Time Offer: Get 15% off on all Cogo Assured Rates.Book Today!</span>
+                    <span><b>Limited Time Offer: Get 15% off on all Cogo Assured Rates. <span style="color: #fbdc00;">Book Today!</span></b></span>
                 </div>
                 <div class="cancel">
-                    X
+                    <img src="./static/icons8-delete-64.png" height="15px">
                 </div>
             </nav>
 
                 <div class="navbar-2">
                     <div class="frac">
                         <img src="./static/icons8-menu-16.png" style="width: 30px; margin: 10px;" class="dropdown">
-                        <img src="./static/cogonavbar.png">
+                        <img src="./static/cogonavbar.png" class="yellowlogo">
+                        <img src="./static/cogologowhite.png" class="whitelogo">
                     </div>
                     <nav class="navbaritems">
                         <div class="navbaritem">
                             <div>Products</div>
-                            <img src="./static/352021_arrow_drop down_icon.png" style="width: 15px;">
+                            <img src="./static/352021_arrow_drop down_icon.png" >
                         </div>
                         <div class="navbaritem">
                             <div>Partners</div>
-                            <img src="./static/352021_arrow_drop down_icon.png" style="width: 15px;">
+                            <img src="./static/352021_arrow_drop down_icon.png">
                         </div>
                         <div class="navbaritem">
                             <div>Tools</div>
-                            <img src="./static/352021_arrow_drop down_icon.png" style="width: 15px;">
+                            <img src="./static/352021_arrow_drop down_icon.png">
                         </div>
                         <div class="navbaritem">
                             <div>Company</div>
-                            <img src="./static/352021_arrow_drop down_icon.png" style="width: 15px;">
+                            <img src="./static/352021_arrow_drop down_icon.png">
                         </div>
                         <div class="navbaritem">
                             <div>Knowledge Center</div>
-                            <img src="./static/352021_arrow_drop down_icon.png" style="width: 15px;">
+                            <img src="./static/352021_arrow_drop down_icon.png">
                         </div>
                         <div class="navbaritem">
                             <div>Contact Us</div>
@@ -70,7 +74,7 @@
                     </nav>
                     <div class="auth" style="display: flex; align-items: center;">
                         <img src="https://icon-library.com/images/smiley-512_58146.png" style="height: 20px; width: 20px; margin-right: 10px;" class="smiley">
-                        <span style="margin-right: 20px;" class="loginnavbar">Login</span>
+                        <span style="margin-right: 20px;" class="loginnavbar">login</span>
                         <button class="signupnavbar">Signup</button>
                       </div>
                 </div>
@@ -80,22 +84,22 @@
         <div class="bannercontainer">
             <div class="banner">
                 <div class="bannerleft">
-                    <h1 style="font-size: 40px;">Grow Faster, Go Global.</h1>
+                    <h1 class="titlephrase">Grow Faster, Go Global.</h1>
                     <br>
                     <div>
-                        <div style="font-size: 14px;">Strengthen your Supply Chain, and Scale your Business<br>
+                        <div style="font-size: 14px;">Strengthen your Supply Chain, and Scale your Business
                         with Reliable Shipping and Cashflows.</div>
                     </div>
                     <br>
 
 
-                    <div style="font-size: 12px; margin-left: 4px;">Talk to us now!</div>
-                    <div style="width: 60%; background-color: white; height: 40px; display: flex; align-items: center; border-radius: 50px; width: 350px;">
+                    <div style="font-size: 12px; margin-left: 4px;"><b>Talk to us now!</b></div>
+                    <div class="bannercontact">
                         <img src="https://www.freepnglogos.com/uploads/whatsapp-logo-light-green-png-0.png" width="50">
                         <div>+91</div>
                         <img src="https://toppng.com/uploads/preview/dropdown-arrow-icon-11549436877ggpbrxberh.png" width="10" style="padding-left: 5px;">
                         <input type="text" id="number" name="number" placeholder="Whatsapp Number" class="whatsappinput">
-                        <button style="background-color: #36bb22; padding: 5px 15px; border-radius: 20px; color: white; height: 30px; font-size: 11px; margin-right: -50px;">Get Started</button>
+                        <button class="bannercontactbutton">Get Started</button>
                     </div>
                 </div>
                 <div class="bannerright">
@@ -110,30 +114,32 @@
     <div class="figurecontaniner" style="margin-bottom: 50px;">
         <div class="figures">
             <div class="figure">
-                <div style="display: flex; font-size: 25px;"><h1 id="count1">0</h1><h1>+</h1></div>
+                <div style="display: flex;""><h1 id="count1">0</h1><h1>+</h1></div>
                 <b style="display: block;">Countries Served</b>
             </div>
             <div class="figure" >
-                <div style="font-size: 25px;"><h1 id="count2" >0</h1></div>
+                <div><h1 id="count2" >0</h1></div>
                 <b>Ports Pairs Served</b>
             </div>
             <div class="figure">
-                <div style="display: flex; font-size: 25px;"><h1 id="count3">0</h1><h1>+</h1></div>
+                <div style="display: flex;""><h1 id="count3">0</h1><h1>+</h1></div>
                 <b>Tons of Air Cargo Moved</b>
             </div>
             <div class="figure">
-                <div style="font-size: 25px;"><h1 id="count4">0</h1></div>
+                <div ><h1 id="count4">0</h1></div>
                 <b>Containers Moved</b>
             </div>
         </div>
     </div>
 <!--Tagline-->
+    <div class="taglineproductcontainer">
     <div class="curved" style="background-color: rgb(248, 252, 239);"></div>
     <div class="taglinecontainer">
         <div class="tagline">
-            <div style="font-size: 20px;">
-                <h1>One Stop Solution for Your<br>Supply Chain</h1>
-                <span style="font-size: 13px;">Connected Shipping, Finance, and Trade-tech, to Power Global Trade and Supply Chains.</span>
+            <div>
+                <div id="tagline1">One Stop Solution for Your<br>Supply Chain</div>
+                <br>
+                <span id="tagline2">Connected Shipping, Finance, and Trade-tech, to Power Global Trade and Supply Chains.</span>
             </div>
         </div>
 
@@ -145,53 +151,49 @@
     <!--Products and Services-->
     <div class="productservicecontainer">
         <div class="productservice">
-            <h1 style="text-align: center; margin-bottom: 30px;">Our Products</h1>
+            <h1 style="text-align: center; margin-bottom: 50px;">Our Products</h1>
             <div class="services">
                     <div class="service">
                         <div class="servicetext">End to End Cross Border Logistics</div>
                         <div class="products">
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/1.png" >
                                 <div class="productdesc">
-                                    <div style="font-weight: bold;">Ocean: FCL</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>Ocean: FCL</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/2.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">Ocean: LCL</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>Ocean: LCL</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/3.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">International Air</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>International Air</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/4.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">Customs, CFS, & Handling</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>Customs, CFS, &<br>Handling</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
 
@@ -201,26 +203,24 @@
                     <div class="service">
                         <div class="servicetext">Domestic Logistics</div>
                         <div class="products">
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/5.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">FTL, PTL</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>FTL, PTL</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/6.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">Trailer & Rail Container Haulage</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>Trailer & Rail<br>Container Haulage</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -229,48 +229,44 @@
                     <div class="service">
                         <div class="servicetext">Supply Chain Solutions</div>
                         <div class="products">
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/7.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">CogoAssured</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>CogoAssured</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/8.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">Domestic Fulfillment</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>Domestic Fulfillment</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/9.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">Door to Door Shipments</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>Door to Door<br>Shipments</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/10.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">Cargo Insurance</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>Cargo Insurance</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -279,26 +275,24 @@
                     <div class="service">
                         <div class="servicetext">Financial Services</div>
                         <div class="products">
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/11.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">Pay Later</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>Pay Later</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/12.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">Export Factoring</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>Export Factoring</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -307,48 +301,44 @@
                     <div class="service">
                         <div class="servicetext">Trade Management Solutions</div>
                         <div class="products">
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/13.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">Freight Rates & Schedules</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>Freight Rates &<br>Schedules</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/14.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">Quick Premium Quotations</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>Quick Premium<br>Quotations</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/15.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">Duties & Taxes Calculator</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>Duties & Taxes<br>Calculator</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="product" style="padding-bottom: 5px;">
+                            <div class="product">
                                 <img src="./static/16.png" >
                                 <div class="productdesc">
-                                    <div style="font-size: 15px; font-weight: bold;">Tracking & Visibility</div>
-                                    <div style=" display: flex; width: 100%; justify-content: center; align-items: center;">
-                                        <p style="font-size: 13px; margin-right: 2px; ">Find Out More</p>
-                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 20px; height: 10px;">
+                                    <b>Tracking & Visibility</b>
+                                    <div>
+                                        <p>Find Out More</p>
+                                        <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png">
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -356,12 +346,12 @@
             </div>
         </div>
     </div>
-
+</div>
     <!--Trusting brands animation-->
-    <div class="trustanimationcontainer" style="margin-top: 50px;">
+    <div class="trustanimationcontainer">
         <h1 style="text-align: center; margin-bottom: 20px;">
             Trusted By
-        </h1>
+        </h1>-
           <div class="container" style="height: 150px;">
             <div class="image-container">
               <img src="https://www.cogoport.com/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fais-logo-1.webp&w=256&q=75" alt="Image 1">
@@ -387,8 +377,6 @@
               <img src="https://www.cogoport.com/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fvedanta.png&w=256&q=75" alt="Image 3">
 
               <img src="https://www.cogoport.com/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fbluestar_logo.png&w=256&q=75" alt="Image 3">
-
-              <!-- Add more images here -->
 
               <img src="https://www.cogoport.com/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fais-logo-1.webp&w=256&q=75" alt="Image 1">
 
@@ -419,7 +407,7 @@
     </div>
 
 <!--working functionality and stages-->
-    <div class="getstarted1" style="height: 150px;">
+    <div class="getstarted1">
         <div class="question">
             <h1>Ready to take your Supply Chain to the Next Level?</h1>
         </div>
@@ -494,7 +482,7 @@
     </div>
 
     <!--Industries-->
-    <div class="industrycontainer" style="margin-top: 75px;">
+    <div class="industrycontainer">
         <h1>Industries Served</h1>
         <br>
         <br>
@@ -529,9 +517,9 @@
         </div>
     </div>
     </div>
-    <div class="getstartedcontainer" style="margin-top: 75px;">
+    <div class="getstartedcontainer">
         <div class="getstarted">
-            <h1>Get Started Today</h1>
+            <div style="font-size: 35px;"><b>Get Started Today</b></div><br>
             <span>Plan, Book and Finance your shipment in one place.</span>
             <br><br>
             <span>Experience how Cogoport’s Global Trade Platform can Turbocharge your Business.</span>
@@ -552,13 +540,13 @@
                 <p>Know more about Cogoport’s Global Trade PlatformTM</p>
             </div>
             <div class="growbutton">
-                <button>Know More</button>
+                <button >Know More </button>
             </div>
         </div>
     </div>
 
     <!--Blogs-->
-    <div style="width: 100%; margin-top: 75px;">
+    <div class="blogcontainer">
         <h1 style="text-align: center;">Blogs</h1>
         <br>
         <div class="blogs">
@@ -580,7 +568,7 @@
                 <br>
                 <div class="readmoreblog">
                     <b class="blogtitle" style="color: #ee3425;">
-                        Read More ...
+                        Read More<img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 15px; height: 7px;">
                     </b>
                     <div style="text-align: right; color: rgb(211, 154, 154);">05 July 2023</div>
                 </div>
@@ -605,7 +593,7 @@
 
                 <div class="readmoreblog">
                     <b class="blogtitle" style="color: #ee3425;">
-                        Read More ...
+                        Read More <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 15px; height: 7px;">
                     </b>
                     <div style="text-align: right; color: rgb(211, 154, 154);">03 July 2023</div>
                 </div>
@@ -629,7 +617,7 @@
                 <br>
                 <div class="readmoreblog">
                     <b class="blogtitle" style="color: #ee3425;">
-                        Read More ...
+                        Read More <img src="https://www.freeiconspng.com/uploads/red-right-arrow-12.png" style="width: 15px; height: 7px;">
                     </b>
                     <div style="text-align: right; color: rgb(211, 154, 154);">24 June 2023</div>
                 </div>
@@ -653,10 +641,9 @@
                     <h1>Subscribe to our newsletter now!</h1>
                     <p>Don’t miss out on the latest happenings at Cogoport.</p>
                     <br>
-                    <div style="width: 100px; background-color: white; height: 40px; display: flex; align-items: center; border-radius: 5px; width: 350px; padding-left: 10px;">
-
+                    <div class="footercontactarea">
                         <input type="text" id="number" name="number" placeholder="Enter your email here" style="width: 400px;">
-                        <button style="background-color: #ee3425; padding: 5px 15px; border-radius: 5px; color: white; height: 40px; font-size: 13px; "><b>Subscribe</b></button>
+                        <button class="footercontactbutton"><b>Subscribe</b></button>
                     </div>
                 </div>
             </div>
@@ -754,12 +741,12 @@
             </div>
             <div class="mobilelists">
                 <div class="mobilelistitem">
-                    <h2>Products</h2>
-                    <h2>Partners</h2>
-                    <h2>Tools</h2>
-                    <h2>Company</h2>
-                    <h2>Knowledge Center</h2>
-                    <h2>Contact Us</h2>
+                    <div>Products</div>
+                    <div>Partners</div>
+                    <div>Tools</div>
+                    <div>Company</div>
+                    <div>Knowledge Center</div>
+                    <div>Contact Us</div>
                 </div>
             </div>
             <br>
@@ -771,31 +758,31 @@
                 <div class="locationlist">
                     <div>Mandideep (IN) to Jebel Ali</div>
                     <div>Mandideep (IN) to Tema</div>
-                    <div>Mandideep (IN) to Savannah, Georgia                    </div>
+                    <div>Mandideep (IN) to Savannah, Georgia</div>
                     <div>Mandideep (IN) to Abu Dhabi</div>
                     <div>Mandideep (IN) to Valencia</div>
                     <div>Mandideep (IN) to Wellington</div>
                     <div>Mandideep (IN) to Napoli , Naples</div>
                     <div>Mandideep (IN) to Tincan (Lagos)</div>
                     <div>Mandideep (IN) to Sohar</div>
-                    <div>Mandideep (IN) to Antwerp Churchill Terminal (BE)                    </div>
+                    <div>Mandideep (IN) to Antwerp Churchill Terminal (BE)</div>
                 </div>
                 <div class="locationlist">
                     <div>Mandideep (IN) to Conakry</div>
                     <div>Mandideep (IN) to Felixstowe</div>
-                    <div>Mandideep (IN) to Onne                    </div>
+                    <div>Mandideep (IN) to Onne</div>
                     <div>Mandideep (IN) to Mindelo</div>
                     <div>Mandideep (IN) to Long Beach</div>
                     <div>Mandideep (IN) to Acajutla</div>
                     <div>Mandideep (IN) to Douala</div>
                     <div>Mandideep (IN) to Dammam</div>
                     <div>Mandideep (IN) to Aqaba</div>
-                    <div>Mandideep (IN) to Veracruz              </div>
+                    <div>Mandideep (IN) to Veracruz</div>
                 </div>
                 <div class="locationlist">
                     <div>Mandideep (IN) to Istanbul</div>
                     <div>Mandideep (IN) to Los Angeles</div>
-                    <div>Mandideep (IN) to Brisbane                    </div>
+                    <div>Mandideep (IN) to Brisbane</div>
                     <div>Mandideep (IN) to Aden</div>
                     <div>Mandideep (IN) to Maputo</div>
                     <div>Mandideep (IN) to Bahrain</div>
@@ -803,7 +790,7 @@
                     <div>Mandideep (IN) to Lobito</div>
                     <div>Mandideep (IN) to Tamatave (Toamasina)
                     </div>
-                    <div>Mandideep (IN) to Dublin                    </div>
+                    <div>Mandideep (IN) to Dublin</div>
                 </div>
             </div>
 

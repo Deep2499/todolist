@@ -1,19 +1,24 @@
-const movingElement = document.getElementsByClassName("navbar-1");
-const colorChangeElement = document.getElementsByClassName("navbar-2");
-
+const movingElement = document.querySelector(".navbar-1");
+const colorChangeElement = document.querySelector(".navbar-2");
+const yellowlogo = document.querySelector(".yellowlogo");
+const whitelogo = document.querySelector(".whitelogo")
+whitelogo.style.display="none"
 window.addEventListener('scroll', function() {
       const rect = movingElement.getBoundingClientRect();
       const isInView = (
         rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
       );
 
       if (!isInView) {
         colorChangeElement.style.backgroundColor = "white";
+        yellowlogo.style.display="none"
+        whitelogo.style.display="block"
+
       } else {
-        colorChangeElement.style.backgroundColor = "white";
+        colorChangeElement.style.backgroundColor = "#fbdc00";
+        yellowlogo.style.display="block"
+        whitelogo.style.display="none"
       }
     });
     window.addEventListener('scroll', function() {
