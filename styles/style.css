@@ -56,6 +56,8 @@ body{
     width: 70%;
     text-align: right;
     padding-right: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 .offer span{
     font-size: 13px;
@@ -181,6 +183,10 @@ body{
     background-color: rgb(248, 252, 239);
     width: 100%;
     margin-top: 100px;
+}
+.titlephrase{
+    font-size: 40px;
+    font-weight: bold;
 }
 @media (max-width: 767px){
     .titlephrase{
@@ -565,7 +571,7 @@ margin-top: 30px;
 .locations{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     margin:auto;
     background-color: #ebbe00;
@@ -573,8 +579,24 @@ margin-top: 30px;
     padding-bottom: 20px;
 }
 .locationlist{
-    width: 30%;
+    width: 32%;
 }
+.desktoplists h2{
+    text-decoration: underline;
+}
+.locationlist div{
+    line-height: 25px;
+}
+.desktoplists div div div{
+    line-height: 30px;
+}
+.locationlist div:hover{
+    text-decoration: underline;
+}
+.desktoplists div div div :hover{
+    text-decoration: underline;
+}
+
 .productlistcontainer, .partnerlistcontainer, .toollistcontainer, .companylistcontainer, .knowledgelistcontainer{
     margin: 3px;
     margin-bottom: 50px;
@@ -928,4 +950,47 @@ transform: translateX(-155.5%);
 
   #sticky-contact h2 {
     margin-top: 0;
+  }
+
+
+  .finalfooter{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #ebbe00;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .finalfooter1{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+  .finalfooter2{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: right;
+    padding-right: 50px;
+  }
+  .socialmedia{
+    margin-left: 35px;
+    order: 2;
+  }
+
+  @media (max-width: 767px) {
+    .socialmedia{
+        margin-left: 35px;
+        order: 1;
+        margin-right: 10px;
+      }
+      .finalfooter1{
+        display: none;
+      }
+      .finalfooter {
+        width: 100%;
+        justify-content: left;
+      }
   }
