@@ -132,7 +132,7 @@ body{
     background-position: bottom;
     background-size: cover;
     height: auto;
-    height: 500px;
+    height: 400px;
 }
 #sticky-contact b{
     font-size: 10px; color: white;
@@ -151,15 +151,17 @@ body{
     justify-content: center;
     margin: auto;
     padding-left: 30px;
+    height: 400px;
 }
 .bannerright{
     display: flex;
     flex-direction: column;
     width: 45%;
     justify-content: end;
-    margin-bottom: -3px;
+    height: 397px;
 }
 .bannerright video{
+    height: 200px;
     object-fit: fill;
     width: 100%;
     flex: 1 1;
@@ -183,6 +185,7 @@ body{
 @media (max-width: 767px){
     .titlephrase{
         font-size: 30px;
+        font-weight: bold
     }
     .navbar-2 .navbaritems{
         display: none;
@@ -286,12 +289,13 @@ margin-top: 30px;
     align-items: center;
     height: 400px;
     background-color: rgb(248, 252, 239);
-    margin-left: 20px;
+    margin-left: 0px;
 }
 .tagline{
     width: 50%;
     display: flex;
     justify-content: center;
+    padding-left: 40px;
 }
 .taglineimage{
     width: 50%;
@@ -303,9 +307,10 @@ margin-top: 30px;
     justify-content: flex-start;
 }
  #tagline1{
-    font-size: 35px;
+    font-size: 20px;
     font-weight: bolder;
 }
+
 @media (max-width: 767px) {
     .taglinecontainer{
         flex-direction: column-reverse;
@@ -320,7 +325,7 @@ margin-top: 30px;
         width: 100%;
     }
     #tagline1{
-        font-size: 25px;
+        font-size: 15px;
         font-weight: bolder;
     }
 }
