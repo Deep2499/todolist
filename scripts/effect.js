@@ -32,17 +32,21 @@ window.addEventListener('scroll', function() {
     }
     });
 
+    function numberWithCommas(number) {
+      return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
 function countAnimation(target, duration, idc) {
   let start = 0;
   const step = Math.ceil(target / duration);
   const countElement = document.getElementById(idc);
   function animateCount() {
     start += step;
-    countElement.textContent = start;
+    countElement.textContent = numberWithCommas(start);
     if (start < target) {
       requestAnimationFrame(animateCount);
     } else {
-      countElement.textContent = target;
+      countElement.textContent = numberWithCommas(target);
     }
   }
   animateCount();
@@ -52,6 +56,9 @@ countAnimation(180, 1000, "count1");
 countAnimation(10000, 230, "count2");
 countAnimation(30000, 210, "count3");
 countAnimation(700000, 200, "count4");
+
+
+
 
 window.addEventListener('scroll', function() {
   var sidebar = document.getElementById('sidebar');
