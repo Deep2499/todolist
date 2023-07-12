@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Todo list</h1>
+    <div class="input_container">
+      <textarea class="inputfield" rows="4" cols="50"></textarea>
+      <button class="addbutton" onclick="add_todo()" style="height: 20px; margin-left: 30px;"><b>Add</b></button>
+    </div>
+    <div class="list_container">
+      <br>
+      <button class="show">Show Todos</button>
+      <button class="hide">Hide Todos</button>
+      <ol class="tasklist"></ol>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
